@@ -4,12 +4,12 @@ import os
 
 
 class Config(object):
-    APP_ID = int(os.environ.get("APP_ID", 1234567))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    APP_ID = 17945796
+    API_HASH = "4a05481a5da2d66f801acffc4ca5ee4b"
+    BOT_TOKEN = "5700920410:AAEk8j5NZb6wiIVuu3-NS6AL243bl57EpvU"
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5152809878").split())
     IS_PUBLIC_BOT = os.environ.get("IS_PUBLIC_BOT") in ["True", "true"]
-    LOGS_CHANNEL = int(os.environ.get("LOGS_CHANNEL")) if os.environ.get("LOGS_CHANNEL") else None
+    LOGS_CHANNEL = int(os.environ.get("-1001874063925")) if os.environ.get("LOGS_CHANNEL") else None
     # DON'T CHANGE THESE 2 VARS
     DOWNLOAD_LOCATION = "./NexaBots"
     TG_MAX_SIZE = 2040108421
